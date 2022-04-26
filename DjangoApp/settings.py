@@ -31,6 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '173.230.133.146',
     '127.0.0.1',
+    'edipra.tech',
 ]
 
 
