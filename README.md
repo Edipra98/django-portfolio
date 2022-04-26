@@ -1,2 +1,3 @@
-# django-portfolio
-# django-portfolio
+# GitHub repo for my website
+
+### url: edipra.tech
