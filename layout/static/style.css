@@ -1,0 +1,358 @@
+/* :root {
+  --main: rgb(3, 6, 59);
+} */
+* {
+  background-color: rgb(3, 6, 59);
+  color: #f5f5f5;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: var(--main);
+  font-family: 'Arvo', serif;
+  width: 75vw;
+  margin: auto;
+  display: flex;
+}
+.footer {
+  background-color: var(--main);
+  display: table;
+  margin: auto;
+}
+.container {
+  background-color: var(--main);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: auto;
+  height: inherit;
+}
+.footer-container {
+  background-color: var(--main);
+  display: table-cell;
+  vertical-align: middle;
+}
+.col {
+  background-color: inherit;
+  flex-basis: 33%;
+  margin: auto;
+  padding: auto;
+}
+.labels {
+  background-color: var(--main);
+  margin: auto;
+  font-size: 4rem;
+  padding: 0.5rem;
+}
+.navigation {
+  flex-basis: 80%;
+  flex-shrink: 0;
+  flex-grow: 2;
+  text-align: center;
+  align-items: center;
+}
+.link-main {
+  display: flexbox;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  align-items: center;
+}
+.social {
+  background-color: var(--main);
+  font-size: 3rem;
+  align-items: right;
+  text-align: right;
+}
+i,
+a,
+u,
+.quote,
+.about,
+.author,
+.quote-inside {
+  background-color: inherit;
+  text-decoration: none;
+}
+.about {
+  margin: auto;
+  max-width: 65vw;
+  text-align: center;
+  align-items: center;
+}
+.main {
+  width: 75vw;
+  margin: auto;
+  font-size: 1.5rem;
+  background: transparent;
+  padding: 1rem;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.31416316526610644) 100%
+    ),
+    url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  border-radius: 1rem;
+  display: table;
+}
+.main-container {
+  background-color: inherit;
+  display: table-cell;
+  vertical-align: middle;
+}
+.quote {
+  align-items: center;
+  text-align: center;
+  margin: 1rem auto 3rem auto;
+  padding: 1rem;
+  font-size: 2.25rem;
+}
+.about-me {
+  background-color: transparent;
+  font-size: 1.75rem;
+  font-weight: bold;
+  align-items: left;
+  text-align: left;
+}
+.works {
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.work-links {
+  width: 14vw;
+  height: 21vw;
+  background-size: scale-down;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  padding: auto;
+}
+.project {
+  background-color: transparent;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.middle-align {
+  margin: auto;
+  padding: auto;
+}
+.link-main {
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.tab {
+  tab-size: 8;
+}
+.red-text {
+  color: red;
+  background-color: transparent;
+}
+.code,
+.webpage {
+  margin: 0 0.25rem 0 0.25rem;
+  font-size: 1.5rem;
+}
+.form-style {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #f7539450;
+}
+.overlay {
+  width: 75vh;
+  height: auto;
+  background-color: rgb(3, 6, 59);
+  border-radius: 1rem;
+  
+}
+.name,
+.email,
+.message,
+.btn {
+  font-family: 'Arvo', serif;
+  color: white;
+}
+.name,
+.email {
+  height: 1.5rem;
+  width: 100%;
+}
+.message {
+  height: 10rem;
+  width: 50%;
+}
+.btn {
+  height: 3rem;
+  width: 6rem;
+  font-size: 1.5rem;
+  margin: auto;
+  color: white;
+}
+.thank-you {
+  background-color: transparent;
+  display: table-cell;
+  vertical-align: middle;
+}
+.thank-you-text{
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.thank-you-text p {
+  margin: 1rem auto;
+  text-align: center;
+  color: #f75394;
+  text-shadow: 0 0 0.25rem #f7539450;
+  background-color: transparent;
+  box-shadow: 0 0 1rem 0.125rem #f75394;
+  font-size: 4rem;
+  width: auto;
+  max-width: 80vw;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 1rem;
+}
+.projects {
+  margin-top: 1rem;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+}
+@media (max-width: 1500px) {
+  .work-links {
+    width: 18vw;
+    height: 27vw;
+  }
+  .overlay {
+    width: 75vh;
+    height: auto;
+    background-color: rgb(3, 6, 59);
+    border-radius: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: auto;
+  }
+  .work {
+    overflow: auto;
+    width: 90vw;
+    height: auto;
+  }
+  .col {
+    background-color: inherit;
+    margin: auto;
+    padding: auto;
+  }
+  .work-links {
+    width: 24vw;
+    height: 36vw;
+  }
+  .overlay {
+    width: 90vw;
+    height: auto;
+    background-color: rgb(3, 6, 59);
+    border-radius: 1rem;
+  }
+  .social {
+    font-size: 3rem;
+    flex-basis: 20%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  .work-links {
+    width: 31vw;
+    height: 46vw;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: auto;
+  }
+  .col {
+    background-color: inherit;
+    flex-basis: 100%;
+  }
+  .labels {
+    background-color: inherit;
+    margin: 10px auto;
+    font-size: 4rem;
+    align-items: center;
+    text-align: center;
+  }
+  .social {
+    background-color: inherit;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    margin: auto 5px;
+  }
+  .main {
+    width: 90vw;
+    margin: auto;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    align-items: left;
+    border-radius: 1rem;
+    vertical-align: bottom;
+    display: table;
+  }
+  .quote {
+    font-size: 1.75rem;
+  }
+  .work-links {
+    width: 40vw;
+    height: 60vw;
+  }
+  .overlay {
+    width: 90vw;
+    height: auto;
+    background-color: rgb(3, 6, 59);
+    border-radius: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    width: 100vw;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 1rem;
+    min-height: 100vh;
+    align-items: left;
+    border-radius: 1rem;
+    vertical-align: bottom;
+    display: table;
+  }
+  .work-links {
+    width: 80vw;
+    height: 120vw;
+  }
+  .overlay {
+    width: 90vw;
+    height: auto;
+    background-color: rgb(3, 6, 59);
+    border-radius: 1rem;
+  }
+}
