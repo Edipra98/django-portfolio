@@ -310,7 +310,7 @@ u,
     margin: auto 5px;
   }
   .main {
-    width: 90vw;
+    width: 100vw;
     margin: auto;
     font-size: 1.5rem;
     min-height: 100vh;
@@ -318,6 +318,9 @@ u,
     border-radius: 1rem;
     vertical-align: bottom;
     display: table;
+  }
+  .main-container {
+    width: 100vw;
   }
   .quote {
     font-size: 1.75rem;
@@ -347,6 +350,9 @@ u,
     border-radius: 1rem;
     vertical-align: bottom;
     display: table;
+  }
+  .main-container {
+    width: 100vw;
   }
   .work-links {
     width: 80vw;
