@@ -355,4 +355,7 @@ u,
     background-color: rgb(3, 6, 59);
     border-radius: 1rem;
   }
+  .about {
+    width: 100vw;
+  }
 }
