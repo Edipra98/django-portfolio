@@ -11,4 +11,4 @@ urlpatterns = [
 	path('projects/', ProjectTemplate.as_view(), name='projects'),
 	path('contact/', ContactTemplate.as_view(), name='contact'),
 	path('thank-you/', ThankYouTemplate.as_view(), name='thank-you'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
