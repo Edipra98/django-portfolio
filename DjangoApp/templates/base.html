@@ -23,23 +23,25 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
   </head>
   <body>
-    <header class="header">
-      <div class="container middle-align navigation">
-        <a href="{% url "layout:home" %}" class="link-main">-Home-</a>
-        <a href="{% url "layout:projects" %}" class="link-main">-Projects-</a>
-      </div>
-        <div class="col labels social">
-          <a href="https://www.linkedin.com/in/daniel-j-arpide/"
-            ><i class="fab fa-linkedin social"></i
-          ></a>
-          <a href="https://github.com/Edipra98"
-            ><i class="fab fa-github-square social"></i
-          ></a>
-        </div>
-    </header>
-    
     <div class="main">
-		{% block body %}{% endblock %}
+      <div class="main-container">
+        <header class="header">
+          <div class="container-table navigation">
+            <a href="{% url "layout:home" %}" class="link-main">-Home-</a>
+            <a href="{% url "layout:projects" %}" class="link-main">-Projects-</a>
+          </div>
+            <div class="col labels-social__links social">
+              <a href="https://www.linkedin.com/in/daniel-j-arpide/"
+                ><i class="fab fa-linkedin social"></i
+              ></a>
+              <a href="https://github.com/Edipra98"
+                ><i class="fab fa-github-square social"></i
+              ></a>
+            </div>
+        </header>
+        
+        {% block body %}{% endblock %}
+      </div>
     </div>
     <footer class="footer">
       <div class="footer-container">
