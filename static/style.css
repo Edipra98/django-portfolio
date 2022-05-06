@@ -303,6 +303,9 @@ u,
 	}
 }
 @media (max-width: 550px) {
+	.main {
+		width: 100vw;
+	}
 	.container {
 		background-color: inherit;
 		display: flex;
@@ -363,7 +366,6 @@ u,
 		width: 100vw;
 		margin: auto;
 		font-size: 1.5rem;
-		padding: 1rem;
 		min-height: 100vh;
 		align-items: left;
 		border-radius: 1rem;
